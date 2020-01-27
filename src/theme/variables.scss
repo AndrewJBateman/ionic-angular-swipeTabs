@@ -3,6 +3,8 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --st-base-color-active: var(--ion-color-primary-contrast);
+  --st-base-color-inactive: var(--ion-color-medium);
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;

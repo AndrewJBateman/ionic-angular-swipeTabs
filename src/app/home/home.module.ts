@@ -5,6 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { SuperTabsModule } from '@ionic-super-tabs/angular';
+import { AccountPageModule } from '../account/account.module';
+import { NewsPageModule } from '../news/news.module';
+import { AboutPageModule } from '../about/about.module';
 
 @NgModule({
   imports: [
@@ -16,7 +20,11 @@ import { HomePage } from './home.page';
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+    SuperTabsModule,
+    NewsPageModule,
+    AccountPageModule,
+    AboutPageModule
   ],
   declarations: [HomePage]
 })

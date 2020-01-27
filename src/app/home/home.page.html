@@ -1,14 +1,48 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+
+    <ion-buttons slot="start" *ngIf="canGoBack">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back" slot="start"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+<super-tabs (tabChange)="onTabChange($event)">
+
+  <super-tabs-toolbar slot="top">
+    <super-tab-button>
+      <ion-icon name="paper" color="light"></ion-icon>
+      <ion-label>News</ion-label>    
+    </super-tab-button>
+    <super-tab-button>
+      <ion-icon name="contact" color="light"></ion-icon>
+      <ion-label>Account</ion-label>    
+    </super-tab-button>
+    <super-tab-button>
+      <ion-icon name="information-circle-outline" color="light"></ion-icon>
+      <ion-label>About</ion-label>    
+    </super-tab-button>
+  </super-tabs-toolbar>
+
+  <super-tabs-container>
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="newsPage" #newsNav ></ion-nav>
+      </ion-content>
+    </super-tab>
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="accountPage" ></ion-nav>
+      </ion-content>
+    </super-tab>
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="aboutPage" ></ion-nav>
+      </ion-content>
+    </super-tab>
+  </super-tabs-container>
+
+</super-tabs>
