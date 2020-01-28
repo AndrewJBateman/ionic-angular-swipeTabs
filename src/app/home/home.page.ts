@@ -18,14 +18,15 @@ export class HomePage implements AfterViewInit {
   canGoBack=false;
   title="News";
 
-  @ViewChild('newsNav', {static: false}) newsNav:IonNav;
+  @ViewChild('newsNav', {static: false}) newsNav: IonNav;
   
   constructor() {}
 
   ngAfterViewInit() {
-    this.newsNav.ionNavDidChange.subscribe(async ev => {
-      console.log('Change: ', ev)
+    this.newsNav.ionNavDidChange.subscribe(async (event: any) => {
+      console.log('Change: ', event)
       this.canGoBack = await this.newsNav.canGoBack();
+      console.log('this.canGoBack boolean state: ', this.canGoBack)
     });
   }
 
