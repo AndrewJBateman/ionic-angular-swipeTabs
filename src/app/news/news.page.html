@@ -1,17 +1,13 @@
 <ion-content>
+	<ion-button expand="full" (click)="openDetails()">
+		Open Details from code
+	</ion-button>
 
-  <ion-button expand="full" (click)="openDetails()">
-    Open Details from code
-  </ion-button>
+	<ion-button expand="full" (click)="openAboutTab()">
+		Select About tab
+	</ion-button>
 
-  <ion-button expand="full" (click)="openAboutTab()">
-    Select About tab
-  </ion-button>
-
-  <ion-nav-link routerDirection="forward" [component]="newsDetail">
-    <ion-button expand="full">
-      Open Details with nav
-    </ion-button>
-  </ion-nav-link>
-
+	<ion-nav-link routerDirection="forward" [component]="newsDetail">
+		<ion-button expand="full"> Open Details with nav </ion-button>
+	</ion-nav-link>
 </ion-content>

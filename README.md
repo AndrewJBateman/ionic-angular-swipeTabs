@@ -1,21 +1,25 @@
 # :zap: Ionic Swipeable Tabs
 
-Ionic-Angular tutorial app with swipeable tab navigation.
+* Ionic-Angular tutorial app with swipeable tab navigation.
 
 ## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Ionic Swipeable Tabs](#zap-ionic-swipeable-tabs)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-do list](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
-* User can swipe left or right to switch between News, Account and About tab pages. News page has 3 buttons that open News Details and About pages.
+* User can swipe left or right to switch between News, Account and About tab pages.
+* News page has 3 buttons that open News Details and About pages.
 
 ## :camera: Screenshots
 
@@ -24,12 +28,14 @@ Ionic-Angular tutorial app with swipeable tab navigation.
 ## :signal_strength: Technologies
 
 * [Ionic v5](https://ionicframework.com/)
-* [Angular v8](https://angular.io/)
-* [Ionic/angular v4](https://www.npmjs.com/package/@ionic/angular) including [ion-nav-link](https://ionicframework.com/docs/api/nav-link)
-* [@ionic-super-tabs/angular v6](https://www.npmjs.com/package/@ionic-super-tabs/angular)
+* [Angular v11](https://angular.io/)
+* [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular) including [ion-nav-link](https://ionicframework.com/docs/api/nav-link)
+* [@ionic-super-tabs/angular v7](https://www.npmjs.com/package/@ionic-super-tabs/angular)
 
 ## :floppy_disk: Setup
 
+* Run `npm i` to install dependencies
+* Run `ng lint` to run linting. All files pass linting (ident check disabled in `tslint.json`).
 * To start the server on _localhost://8100_ type: 'ionic serve'
 
 ## :computer: Code Examples
@@ -52,7 +58,6 @@ Ionic-Angular tutorial app with swipeable tab navigation.
 ## :clipboard: Status & To-do list
 
 * Status: Working
-
 * To-do: nothing. Could use this swipeable menu in other Ionic apps.
 
 ## :clap: Inspiration

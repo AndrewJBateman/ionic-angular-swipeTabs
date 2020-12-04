@@ -58,8 +58,9 @@
     "ordered-imports": false,
     "quotemark": [
       true,
-      "single"
+      "double"
     ],
+    "indent": false,
     "trailing-comma": false,
     "no-output-on-prefix": true,
     "no-inputs-metadata-property": true,

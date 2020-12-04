@@ -1,48 +1,45 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar color="primary">
-
-    <ion-buttons slot="start" *ngIf="canGoBack">
-      <ion-button (click)="goBack()">
-        <ion-icon name="arrow-back" slot="start"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title class="ion-text-center">{{ title }}</ion-title>
-  </ion-toolbar>
+	<ion-toolbar color="primary">
+		<ion-buttons slot="start" *ngIf="canGoBack">
+			<ion-button (click)="goBack()">
+				<ion-icon name="arrow-back" slot="start"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+		<ion-title class="ion-text-center">{{ title }}</ion-title>
+	</ion-toolbar>
 </ion-header>
 
 <super-tabs (tabChange)="onTabChange($event)">
+	<super-tabs-toolbar slot="top">
+		<super-tab-button>
+			<ion-icon name="newspaper-outline" color="light"></ion-icon>
+			<ion-label>News</ion-label>
+		</super-tab-button>
+		<super-tab-button>
+			<ion-icon name="document-text-outline" color="light"></ion-icon>
+			<ion-label>Account</ion-label>
+		</super-tab-button>
+		<super-tab-button>
+			<ion-icon name="information-circle-outline" color="light"></ion-icon>
+			<ion-label>About</ion-label>
+		</super-tab-button>
+	</super-tabs-toolbar>
 
-  <super-tabs-toolbar slot="top">
-    <super-tab-button>
-      <ion-icon name="paper" color="light"></ion-icon>
-      <ion-label>News</ion-label>    
-    </super-tab-button>
-    <super-tab-button>
-      <ion-icon name="contact" color="light"></ion-icon>
-      <ion-label>Account</ion-label>    
-    </super-tab-button>
-    <super-tab-button>
-      <ion-icon name="information-circle-outline" color="light"></ion-icon>
-      <ion-label>About</ion-label>    
-    </super-tab-button>
-  </super-tabs-toolbar>
-
-  <super-tabs-container>
-    <super-tab>
-      <ion-content>
-        <ion-nav [root]="newsPage" #newsNav ></ion-nav>
-      </ion-content>
-    </super-tab>
-    <super-tab>
-      <ion-content>
-        <ion-nav [root]="accountPage" ></ion-nav>
-      </ion-content>
-    </super-tab>
-    <super-tab>
-      <ion-content>
-        <ion-nav [root]="aboutPage" ></ion-nav>
-      </ion-content>
-    </super-tab>
-  </super-tabs-container>
-
+	<super-tabs-container>
+		<super-tab>
+			<ion-content>
+				<ion-nav [root]="newsPage" #newsNav></ion-nav>
+			</ion-content>
+		</super-tab>
+		<super-tab>
+			<ion-content>
+				<ion-nav [root]="accountPage"></ion-nav>
+			</ion-content>
+		</super-tab>
+		<super-tab>
+			<ion-content>
+				<ion-nav [root]="aboutPage"></ion-nav>
+			</ion-content>
+		</super-tab>
+	</super-tabs-container>
 </super-tabs>
