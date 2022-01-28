@@ -31,16 +31,16 @@
 
 ## :signal_strength: Technologies
 
-* [Ionic v5](https://ionicframework.com/)
-* [Angular v12](https://angular.io/)
-* [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular) including [ion-nav-link](https://ionicframework.com/docs/api/nav-link)
+* [Ionic v6](https://ionicframework.com/)
+* [Angular v13](https://angular.io/)
+* [Ionic/angular v6](https://www.npmjs.com/package/@ionic/angular) including [ion-nav-link](https://ionicframework.com/docs/api/nav-link)
 * [@ionic-super-tabs/angular v7](https://www.npmjs.com/package/@ionic-super-tabs/angular)
 
 ## :floppy_disk: Setup
 
 * Run `npm i` to install dependencies
 * Run `ng lint` to run linting. All files pass linting (ident check disabled in `tslint.json`).
-* To start the server on _localhost://8100_ type: 'ionic serve'
+* To start the server on _localhost://8100_ type: `ionic serve`
 
 ## :computer: Code Examples
 
