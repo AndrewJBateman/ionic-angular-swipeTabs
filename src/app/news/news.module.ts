@@ -8,8 +8,7 @@ import { NewsPage } from "./news.page";
 import { NewsDetailsPageModule } from "../news-details/news-details.module";
 
 @NgModule({
-	imports: [CommonModule, FormsModule, IonicModule, NewsDetailsPageModule],
-	declarations: [NewsPage],
-	entryComponents: [NewsPage],
+    imports: [CommonModule, FormsModule, IonicModule, NewsDetailsPageModule],
+    declarations: [NewsPage]
 })
 export class NewsPageModule {}
