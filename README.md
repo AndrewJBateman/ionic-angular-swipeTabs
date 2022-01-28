@@ -34,7 +34,7 @@
 * [Ionic v6](https://ionicframework.com/)
 * [Angular v13](https://angular.io/)
 * [Ionic/angular v6](https://www.npmjs.com/package/@ionic/angular) including [ion-nav-link](https://ionicframework.com/docs/api/nav-link)
-* [@ionic-super-tabs/angular v7](https://www.npmjs.com/package/@ionic-super-tabs/angular)
+* [@ionic-super-tabs/angular v7](https://www.npmjs.com/package/@ionic-super-tabs/angular) - last published 2 years ago and I cannot see any documentation. [Github Examples here](https://github.com/zyra/ionic-super-tabs/blob/master/doc-pages/usage/angular.md)
 
 ## :floppy_disk: Setup
 
@@ -61,8 +61,8 @@
 
 ## :clipboard: Status & To-do list
 
-* Status: Working. Updated june 2021.
-* To-do: nothing. Could use this swipeable menu in other Ionic apps.
+* Status: Working.
+* To-do: Nothing. Could use this swipeable menu in other Ionic apps.
 
 ## :clap: Inspiration
 
